@@ -1,0 +1,42 @@
+.register-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(118, 172, 135, 0.5), rgba(83, 138, 72, 0.829)), url('../assets/Products.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Buttons container */
+.register-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem; /* mt-4 */
+  gap: 10px;
+}
+
+.register-buttons .btn {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* Media query for 480px and below */
+@media (max-width: 480px) {
+  .register-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto; /* Allow height to adjust on smaller screens */
+  }
+
+  .register-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .register-buttons .btn {
+    width: 100%;
+  }
+}
